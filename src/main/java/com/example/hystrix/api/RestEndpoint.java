@@ -1,6 +1,6 @@
 package com.example.hystrix.api;
 
-import com.example.hystrix.impl.HelloExternalService;
+import com.example.hystrix.impl.restclient.HelloExternalService;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import javax.ws.rs.GET;
@@ -19,6 +19,13 @@ public class RestEndpoint {
     @Produces(MediaType.TEXT_PLAIN)
     public String hello(@QueryParam("name") String name){
         return helloExternalService.hello(name);
+    }
+
+    @GET
+    @Path("/random")
+    @Produces(MediaType.TEXT_PLAIN)
+    public String random(){
+        return String.valueOf(Math.random());
     }
 
 }
