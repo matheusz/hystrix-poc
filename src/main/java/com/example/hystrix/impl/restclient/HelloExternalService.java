@@ -1,6 +1,7 @@
 package com.example.hystrix.impl.restclient;
 
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixProperty;
 import org.springframework.web.client.RestTemplate;
 
 public class HelloExternalService {
@@ -11,9 +12,11 @@ public class HelloExternalService {
         this.restTemplate = restTemplate;
     }
 
-    @HystrixCommand(fallbackMethod = "fallback")
-    public String hello(String name){
-        String random = restTemplate.getForObject("http://localhost:9000/hystrix/v1/random", String.class);
+    @HystrixCommand(commandProperties = {
+            @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds", value = "5")
+    }, fallbackMethod = "fallback")
+    public String hello(String name) {
+        String random = restTemplate.getForObject("http://localhost:9000/api/v1/random", String.class);
         return "Hello, " + name + "! Your random is " + random;
     }
 

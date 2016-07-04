@@ -39,6 +39,9 @@ dependencies {
     compile('org.springframework.cloud:spring-cloud-starter-hystrix:1.0.6.RELEASE'){
         exclude module: 'archaius-core'
     }
+    compile('org.springframework.cloud:spring-cloud-starter-hystrix-dashboard:1.0.6.RELEASE'){
+        exclude module: 'archaius-core'
+    }
     compile('com.netflix.archaius:archaius-core:0.7.4')
 
     testCompile('junit:junit:4.11')
