@@ -1,4 +1,4 @@
-package com.example.hystrix.impl.restclient;
+package com.example.hystrix.client.impl.restclient;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;

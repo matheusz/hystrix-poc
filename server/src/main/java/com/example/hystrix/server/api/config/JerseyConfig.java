@@ -1,6 +1,6 @@
-package com.example.hystrix.api.config;
+package com.example.hystrix.server.api.config;
 
-import com.example.hystrix.api.RestEndpoint;
+import com.example.hystrix.server.api.RestEndpoint;
 import org.glassfish.jersey.server.ResourceConfig;
 
 import javax.ws.rs.ApplicationPath;

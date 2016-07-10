@@ -1,4 +1,4 @@
-group 'com.example.hystrix'
+group 'com.example.hystrix.server'
 version '1.0-SNAPSHOT'
 
 apply plugin: 'java'
@@ -21,7 +21,7 @@ sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
 jar {
-    baseName = 'hystrix-example'
+    baseName = 'hystrix-example-server'
     version = '1.0-SNAPSHOT'
 }
 
@@ -34,15 +34,5 @@ dependencies {
     compile('org.springframework.boot:spring-boot-actuator-docs')
     compile('org.springframework.boot:spring-boot-starter-jersey')
     compile('org.springframework.boot:spring-boot-starter-web')
-    compile('org.apache.httpcomponents:httpclient:4.5.2')
-
-    compile('org.springframework.cloud:spring-cloud-starter-hystrix:1.0.6.RELEASE'){
-        exclude module: 'archaius-core'
-    }
-    compile('org.springframework.cloud:spring-cloud-starter-hystrix-dashboard:1.0.6.RELEASE'){
-        exclude module: 'archaius-core'
-    }
-    compile('com.netflix.archaius:archaius-core:0.7.4')
-
     testCompile('junit:junit:4.11')
 }

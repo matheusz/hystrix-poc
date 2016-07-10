@@ -58,7 +58,7 @@ $RECYCLE.BIN/
 .Trash-*
 
 # User-specific stuff:
-.idea/
+**/**/.idea/
 
 ## File-based project format:
 *.iws
@@ -66,10 +66,10 @@ $RECYCLE.BIN/
 ## Plugin-specific files:
 
 # IntelliJ
-/out/
+**/**/out/
 
 # mpeltonen/sbt-idea plugin
-.idea_modules/
+**/**/.idea_modules/
 
 # JIRA plugin
 atlassian-ide-plugin.xml
@@ -81,30 +81,30 @@ crashlytics-build.properties
 fabric.properties
 
 ### NetBeans ###
-nbproject/private/
-build/
-nbbuild/
-dist/
-nbdist/
-nbactions.xml
-.nb-gradle/
+**/**/nbproject/private/
+**/**/build/
+**/**/nbbuild/
+**/**/dist/
+**/**/nbdist/
+**/**/nbactions.xml
+**/**/.nb-gradle/
 
 ### Eclipse ###
 
 .metadata
-bin/
-tmp/
-*.tmp
-*.bak
-*.swp
-*~.nib
-local.properties
-.settings/
-.loadpath
-.recommenders
+**/**/bin/
+**/**/tmp/
+**/**/*.tmp
+**/**/*.bak
+**/**/*.swp
+**/**/*~.nib
+**/**/local.properties
+**/**/.settings/
+**/**/.loadpath
+**/**/.recommenders
 
 # Eclipse Core
-.project
+**/**/.project
 
 # External tool builders
 .externalToolBuilders/
@@ -143,30 +143,30 @@ local.properties
 .recommenders/
 
 ### Java ###
-*.class
+**/**/*.class
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
 # Package Files #
-*.jar
-*.war
-*.ear
+**/**/*.jar
+**/**/*.war
+**/**/*.ear
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 
 ### Gradle ###
-.gradle/
+**/**/.gradle/
 
 # Ignore Gradle GUI config
-gradle-app.setting
+**/**/gradle-app.setting
 
 # Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
 !gradle-wrapper.jar
 
 # Cache of project
-.gradletasknamecache
+**/**/.gradletasknamecache
 
 # # Work around https://youtrack.jetbrains.com/issue/IDEA-116898
 # gradle/wrapper/gradle-wrapper.properties

@@ -1,4 +1,4 @@
-package com.example.hystrix.api.config;
+package com.example.hystrix.client.api.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
